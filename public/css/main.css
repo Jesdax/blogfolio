@@ -1,0 +1,17 @@
+/*---- General ----*/
+
+body {
+    background: black;
+}
+
+#logo-ak {
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+/*---- Navigation ----*/
+
+nav {
+    background-image: linear-gradient(#d6897c, #870003);
+}
