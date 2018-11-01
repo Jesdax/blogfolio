@@ -3,7 +3,46 @@
 {% block title %}{{ parent() }} - Accueil{% endblock %}
 
 {% block body %}
-    <div class="xcontainer">
-        <p id="days"></p>
-    </div>
+        <div class="row center">
+            <div class="xcontainer">
+                <div class="col s12 m3">
+                    <img id="profil" src="{{ asset('img/profil.jpg') }}" alt="Photo de profil">
+                    <p id="days"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center">
+                <h2>À propos</h2>
+                <section class="col s12 m4">
+                    <h2 class="center"><img src="{{ asset('icon/graduation-hat.svg') }}" alt="Student" class="icon-main"></h2>
+                    <p class="center">
+                        Je suis actuellement étudiant au sein du parcours diplômant <a href="https://openclassrooms.com/paths/21-chef-de-projet-multimedia-developpement" target="_blank">
+                            "Chef de projet multimédia - Développement"</a> d'Openclassrooms enregistré au <a href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=26290" target="_blank">
+                            Répertoire National des Certifications Professionnelles
+                        </a> au niveau II ou j'apprends à maîtriser les langages de programmation ainsi que la gestion de projet.
+                    </p>
+                </section>
+                <section class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text"><img src="{{ asset('icon/like.svg') }}" alt="Coeur" class="icon-main"></h2>
+                        <p class="center">
+                            Passionné par l’informatique, toujours en quête de nouvelles connaissances, je m’intéresse aux nouvelles technologies, je suis polyvalent,
+                            motivé et déterminé dans mes projets.
+                            Je pratique du sport (salle de musculation, footing) tous les soirs afin de me maintenir en forme et de m'évader quelques heures.
+                        </p>
+                    </div>
+                </section>
+                <section class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center"><img src="{{ asset('icon/checked.svg') }}" alt="Check" class="icon-main"></h2>
+                        <p class="center">
+                            Jeune autodidacte, pratiquant le développement web pendant ma formation et lors de mes temps libres. J’aiguise mes compétences un peu plus
+                            chaque jour, tant en programmation qu’en ligne de commande linux.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
 {% endblock %}

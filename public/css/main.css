@@ -1,15 +1,21 @@
 /*---- General ----*/
 
-body {
-    background: #f24236;
-}
-
 #logo-ak {
     height: 50px;
     margin-left: 10px;
     margin-top: 7px;
 }
 
+#profil {
+    border-radius: 1000px;
+    height: 250px;
+    margin-top: 70px;
+}
+
+.icon-main {
+    height: 70px;
+    width: 70px;
+}
 /*---- Navigation ----*/
 
 nav {
