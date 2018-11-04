@@ -1,5 +1,9 @@
 /*---- General ----*/
 
+h4 {
+    font-size: calc(90% + .5vw);
+}
+
 #logo-ak {
     height: 50px;
     margin-left: 10px;
@@ -65,4 +69,224 @@ nav {
     line-height: 40px;
     font-style: normal;
     color: #999;
+}
+
+/*---- Skills ----*/
+.env {
+    height: 10rem;
+}
+
+.list {
+    margin: 0 auto;
+    text-align: center;
+}
+.list__item {
+    float: left;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #284255;
+    transition: opacity .25s;
+    opacity: 1;
+    text-align: center;
+}
+.link:not(.current):hover {
+    opacity: .75;
+}
+
+/********
+Utility
+********/
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block !important;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.current {
+    color: #649a99;
+    border: 0.1rem solid #649a99;
+}
+
+/*** Skills Section ***/
+
+/*skill first part */
+#skills {
+    padding-top: 40px;
+    padding-top: 1.5vh;
+    color: #284255;
+}
+#skills:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+#skills .fa-html5 {
+    color: #cf4523;
+}
+#skills .fa-css3 {
+    color: #025891;
+}
+#skills .fa-database {
+    color: #284255;
+}
+#skills .list__item {
+    height: 10rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 23.5%;
+}
+#skills .list__item:last-of-type {
+    margin-bottom: 5%;
+}
+#skills .list__item:hover {
+    -webkit-transform: translate(-2%, -2%);
+    transform: translate(-2%, -2%);
+    cursor: pointer;
+}
+#skills .list__item:nth-child(4n) {
+    margin-right: 0;
+}
+@media (max-width: 1200px) {
+    #skills .list__item {
+        margin-right: 2%;
+        margin-bottom: 2%;
+        width: 32%;
+    }
+    #skills .list__item:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+@media (max-width: 500px) {
+    #skills .list__item {
+        margin-right: 2.5%;
+        margin-bottom: 2.5%;
+        width: 48.75%;
+    }
+    #skills .list__item:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+#skills .list__item .wrapper {
+    position: relative;
+    height: 80%;
+    /* bottom 20% is for text */
+}
+#skills .list__item .fa, #skills .list__item .icon {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    /* center into wrapper */
+}
+#skills .list__item h4 {
+    position: relative;
+    bottom: 5px;
+}
+#skills .list__item h4:hover {
+    opacity: .75;
+}
+
+/* skill second part */
+
+#skills2 {
+    padding-top: 40px;
+    padding-top: 1.5vh;
+    color: #284255;
+}
+#skills2:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+#skills2 .fa-html5 {
+    color: #cf4523;
+}
+#skills2 .fa-css3 {
+    color: #025891;
+}
+#skills2 .fa-database {
+    color: #284255;
+}
+#skills2 .list__item {
+    height: 10rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 23.5%;
+}
+#skills2 .list__item:last-of-type {
+    margin-bottom: 5%;
+}
+#skills2 .list__item:hover {
+    -webkit-transform: translate(-2%, -2%);
+    transform: translate(-2%, -2%);
+    cursor: pointer;
+}
+#skills2 .list__item:nth-child(4n) {
+    margin-right: 0;
+}
+@media (max-width: 1200px) {
+    #skills2 .list__item {
+        margin-right: 2%;
+        margin-bottom: 2%;
+        width: 32%;
+    }
+    #skills2 .list__item:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+@media (max-width: 500px) {
+    #skills2 .list__item {
+        margin-right: 2.5%;
+        margin-bottom: 2.5%;
+        width: 48.75%;
+    }
+    #skills2 .list__item:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+#skills2 .list__item .wrapper {
+    position: relative;
+    height: 80%;
+    /* bottom 20% is for text */
+}
+#skills2 .list__item .fa, #skills2 .list__item .icon {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    /* center into wrapper */
+}
+#skills2 .list__item h4 {
+    position: relative;
+    bottom: 5px;
+}
+#skills2 .list__item h4:hover {
+    opacity: .75;
 }
