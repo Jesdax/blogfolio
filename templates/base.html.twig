@@ -16,14 +16,14 @@
     </head>
     <body>
         {% block navigation %}
-        <nav class="navbar-fixed">
+        <nav class="navbar-fixed" id="content-nav">
             <div class="nav-wrapper">
                 <a href="{{ path('homepage') }}" class="brand-logo"><img src="{{ asset('img/logo.png') }}" alt="Logo du site" id="logo-ak"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">Accueil</a></li>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Compétences</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
                     <li><a href="#">Parcours</a></li>
                     <li><a href="#">Projets</a></li>
                     <li><a href="#">Blog</a></li>
