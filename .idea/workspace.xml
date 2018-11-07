@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="315656fd-b9bb-442a-8713-320fa4ac154a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/ak01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/007.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/icon/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/materialize_effect.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/materialize_effect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/front/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,16 +62,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1234" />
+          <entry key="css" value="1357" />
           <entry key="js" value="599" />
-          <entry key="twig" value="3403" />
+          <entry key="twig" value="6429" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1234" />
+          <entry key="CSS" value="1357" />
           <entry key="JavaScript" value="599" />
-          <entry key="Twig" value="3403" />
+          <entry key="Twig" value="6429" />
         </counts>
       </usages-collector>
     </session>
@@ -79,17 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="188" column="9" selection-start-line="188" selection-start-column="9" selection-end-line="188" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+            <state relative-caret-position="1215">
+              <caret line="773" selection-start-line="773" selection-end-line="773" />
             </state>
           </provider>
         </entry>
@@ -97,10 +90,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/front/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="172" column="43" selection-start-line="172" selection-start-column="36" selection-end-line="172" selection-end-column="43" />
+            <state relative-caret-position="798">
+              <caret line="507" column="173" selection-start-line="507" selection-start-column="173" selection-end-line="507" selection-end-column="173" />
               <folding>
+                <element signature="n#section#1;n#!!top" />
+                <element signature="n#section#0;n#div#0;n#section#1;n#!!top" />
                 <element signature="n#section#2;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -135,10 +133,10 @@
         <option value="$PROJECT_DIR$/public/js/autotext.js" />
         <option value="$PROJECT_DIR$/public/js/materialize_effect.js" />
         <option value="$PROJECT_DIR$/public/css/xmas.css" />
-        <option value="$PROJECT_DIR$/templates/front/index.html.twig" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
-        <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/templates/front/index.html.twig" />
       </list>
     </option>
   </component>
@@ -327,13 +325,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/public/icon" />
+      <recent name="$PROJECT_DIR$/public/pdf/certification" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/icon" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/icon" />
-      <recent name="$PROJECT_DIR$/public/img" />
-      <recent name="$PROJECT_DIR$/public/pdf/certification" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -370,18 +368,18 @@
       <workItem from="1541361665280" duration="7017000" />
       <workItem from="1541440883523" duration="9955000" />
       <workItem from="1541535263256" duration="8116000" />
-      <workItem from="1541613681056" duration="1804000" />
+      <workItem from="1541613681056" duration="7581000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49462000" />
+    <option name="totallyTimeSpent" value="55239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14609851" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14609851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -486,6 +484,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
@@ -495,24 +500,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="188" column="9" selection-start-line="188" selection-start-column="9" selection-end-line="188" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        <state relative-caret-position="1215">
+          <caret line="773" selection-start-line="773" selection-end-line="773" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/front/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="172" column="43" selection-start-line="172" selection-start-column="36" selection-end-line="172" selection-end-column="43" />
+        <state relative-caret-position="798">
+          <caret line="507" column="173" selection-start-line="507" selection-start-column="173" selection-end-line="507" selection-end-column="173" />
           <folding>
+            <element signature="n#section#1;n#!!top" />
+            <element signature="n#section#0;n#div#0;n#section#1;n#!!top" />
             <element signature="n#section#2;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#!!top" />
           </folding>
         </state>
       </provider>
