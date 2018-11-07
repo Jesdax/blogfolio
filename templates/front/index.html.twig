@@ -12,16 +12,16 @@
             </div>
         </div>
     <!-- Start about me -->
-    <section id="a-propos">
+    <section id="a-propos" class="section">
         <div class="row">
             <div class="col s12 center">
-                <h2>À propos</h2>
+                <h1>À propos</h1>
                 <!-- Element -->
                 <h4>Hey ! Je m'appelle <strong>Augustin Kavera</strong> vivant à <strong>Clermont-Ferrand</strong> et je suis <span class="element"></span>.</h4>
                 <!-- End -->
                 <div class="container center">
                     <section class="col s12 m6">
-                        <h2 class="center"><img src="{{ asset('icon/graduation-hat.svg') }}" alt="Student" class="icon-main"></h2>
+                        <h6 class="center"><img src="{{ asset('icon/graduation-hat.svg') }}" alt="Student" class="icon-main"></h6>
                         <p class="center">
                             Je suis actuellement étudiant au sein du parcours diplômant <a href="https://openclassrooms.com/paths/21-chef-de-projet-multimedia-developpement" target="_blank">
                                 "Chef de projet multimédia - Développement"</a> d'Openclassrooms enregistré au <a href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=26290" target="_blank">
@@ -31,7 +31,7 @@
                     </section>
                     <section class="col s12 m6">
                         <div class="icon-block">
-                            <h2 class="center red-text"><img src="{{ asset('icon/like.svg') }}" alt="Coeur" class="icon-main"></h2>
+                            <h6 class="center red-text"><img src="{{ asset('icon/like.svg') }}" alt="Coeur" class="icon-main"></h6>
                             <p class="center">
                                 Passionné par l’informatique, toujours en quête de nouvelles connaissances, je m’intéresse aux nouvelles technologies, je suis polyvalent,
                                 motivé et déterminé dans mes projets.
@@ -41,7 +41,7 @@
                     </section>
                     <section class="col s12 m12">
                         <div class="icon-block">
-                            <h2 class="center"><img src="{{ asset('icon/checked.svg') }}" alt="Check" class="icon-main"></h2>
+                            <h6 class="center"><img src="{{ asset('icon/checked.svg') }}" alt="Check" class="icon-main"></h6>
                             <p class="center">
                                 Jeune autodidacte, pratiquant le développement web pendant ma formation et lors de mes temps libres. J’aiguise mes compétences un peu plus
                                 chaque jour, tant en programmation qu’en ligne de commande linux.
@@ -54,19 +54,15 @@
     </section>
     <!-- End about me -->
     <!-- Separator -->
-    <div class="row">
-        <div class="col s12">
-            <div class="separator">
-                <div class="mask"></div>
-            </div>
-        </div>
+    <div class="separator">
+        <div class="shadow-separator"></div>
     </div>
     <!-- End separator -->
     <!-- Start skill -->
-    <section id="competences">
+    <section id="competences" class="section">
         <div class="container center">
             <section id="skills">
-                <h2 class="scrollspy">Compétences</h2>
+                <h1 class="scrollspy">Compétences</h1>
                 <br/>
                 <ul class="list">
                     <li class="list__item">
@@ -230,24 +226,31 @@
             </section>
         </div>
     </section>
-    <!-- End skill-->
     <!-- Separator -->
-    <div class="row">
-        <div class="col s12">
-            <div class="separator">
-                <div class="mask"></div>
-            </div>
-        </div>
+    <div class="separator">
+        <div class="shadow-separator"></div>
     </div>
     <!-- End separator -->
-    <section id="cursus">
+    <section id="cursus" class="section">
         <div class="row">
             <div class="col s12 center">
-                <h2>Mon parcours</h2>
+                <h1>Mon parcours</h1>
                 <br/>
                 <div class="row">
                     <!-- Timeline -->
                     <ul class="timeline">
+                        <!-- Objet 0 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="flag"><a class="waves-effect waves-light modal-trigger" href="#">Freelance Développeur web</a></span>
+                                    <span class="time-wrapper"><span class="time">2018 - présent </span></span>
+                                </div>
+                                <div class="desc">
+                                    Auto-entrepreneur - Augustin Kavera
+                                </div>
+                            </div>
+                        </li>
                         <!-- Objet 0 -->
                         <li>
                             <div class="direction-l">
@@ -306,11 +309,16 @@
                     </ul>
                 </div>
                 <div class="row">
-                    <a href="{{ asset('pdf/cv.pdf') }}" target="_blank" class="waves-effect waves-light btn"><i class="material-icons left">file_download</i>Voir le CV</a>
+                    <a href="{{ asset('pdf/cv.pdf') }}" target="_blank" class="waves-effect waves-light btn disabled"><i class="material-icons left">file_download</i>Voir le CV</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Separator -->
+    <div class="separator">
+        <div class="shadow-separator"></div>
+    </div>
+    <!-- End separator -->
 
 
 
