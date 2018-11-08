@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    $('.my-countdown').countdown({
+        until:$.countdown.UTCDate(-4,2018,11,25,0,0,0,0),
+        format: 'dhms'
+    });
+
+});
+
 myDate=new Date();
 xmas=Date.parse("Dec 25, "+myDate.getFullYear())
 today=Date.parse(myDate)
@@ -42,3 +50,13 @@ function snowDrop(num, position) {
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 };
+
+
+$(document).ready(function(){
+    $('.my-countdown').countdown({
+        until:$.countdown.UTCDate(-4,2018,11,25,0,0,0,0),
+        format: 'dhms'
+
+    });
+
+});
