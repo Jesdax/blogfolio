@@ -29,7 +29,11 @@
                         <li><a href="#project">Projets</a></li>
                         <li class="disabled"><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="{{ path('security_login') }}">Connexion / S'inscrire</a></li>
+                        {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
+                            <li><a href="{{ path('security_login') }}">Se déconnecter</a></li>
+                        {% else %}
+                            <li><a href="{{ path('security_login') }}">Connexion / Inscription</a></li>
+                        {% endif %}
                     </ul>
                 </div>
             </nav>
@@ -44,7 +48,11 @@
             <li><a href="#project">Projets</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="{{ path('security_login') }}">Connexion/S'inscrire</a></li>
+            {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
+            <li><a href="{{ path('security_logout') }}">Se déconnecter</a></li>
+            {% else %}
+            <li><a href="{{ path('security_login') }}">Connexion / Inscription</a></li>
+            {% endif %}
         </ul>
 
         {% endblock %}
