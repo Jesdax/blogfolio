@@ -19,7 +19,7 @@
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
-                    <a href="{{ path('homepage') }}" class="brand-logo"><img src="{{ asset('img/ak01.png') }}" alt="Logo du site" id="logo-ak"></a>
+                    <a href="{{ path('index') }}" class="brand-logo"><img src="{{ asset('img/ak01.png') }}" alt="Logo du site" id="logo-ak"></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#">Accueil</a></li>
@@ -29,6 +29,7 @@
                         <li><a href="#project">Projets</a></li>
                         <li class="disabled"><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="#">Connexion / S'inscrire</a></li>
                     </ul>
                 </div>
             </nav>
@@ -36,13 +37,14 @@
 
 
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="{{ path('homepage') }}">Accueil</a></li>
+            <li><a href="{{ path('index') }}">Accueil</a></li>
             <li><a href="#a-propos">À propos</a></li>
             <li><a href="#competences">Compétences</a></li>
             <li><a href="#cursus">Parcours</a></li>
             <li><a href="#project">Projets</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
+            <li><a href="#">Connexion/S'inscrire</a></li>
         </ul>
 
         {% endblock %}
