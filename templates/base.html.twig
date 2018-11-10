@@ -22,14 +22,14 @@
                     <a href="{{ path('index') }}" class="brand-logo"><img src="{{ asset('img/ak01.png') }}" alt="Logo du site" id="logo-ak"></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="#">Accueil</a></li>
+                        <li><a href="{{ path('index') }}">Accueil</a></li>
                         <li><a href="#a-propos">À propos</a></li>
                         <li><a href="#competences">Compétences</a></li>
                         <li><a href="#cursus">Parcours</a></li>
                         <li><a href="#project">Projets</a></li>
                         <li class="disabled"><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Connexion / S'inscrire</a></li>
+                        <li><a href="{{ path('security_login') }}">Connexion / S'inscrire</a></li>
                     </ul>
                 </div>
             </nav>
@@ -44,20 +44,16 @@
             <li><a href="#project">Projets</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Connexion/S'inscrire</a></li>
+            <li><a href="{{ path('security_login') }}">Connexion/S'inscrire</a></li>
         </ul>
 
         {% endblock %}
         {% block body %}{% endblock %}
         {% block javascripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js" type="text/javascript"></script>
         <script src="{{ asset('js/materialize_effect.js') }}" type="text/javascript"></script>
         <script src="{{ asset('js/materialize.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/xmas.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/autotext.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
+
         {% endblock %}
     </body>
 </html>

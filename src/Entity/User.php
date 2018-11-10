@@ -4,9 +4,12 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @UniqueEntity(fields="email", message="Cette email est déjà utilisé", groups={"registration"})
+ * @UniqueEntity(fields="username", message="Ce nom d'utilisateur est déjà utilisé", groups={"registration"})
  */
 class User implements UserInterface, \Serializable
 {
@@ -43,7 +46,7 @@ class User implements UserInterface, \Serializable
     private $password;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, unique=true)
      */
     private $email;
 
@@ -72,7 +75,10 @@ class User implements UserInterface, \Serializable
         return $this->id;
     }
 
-    public function getRoles(): ?array
+    /**
+     * @return array
+     */
+    public function getRoles(): array
     {
         $roles = $this->roles;
 

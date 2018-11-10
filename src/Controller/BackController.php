@@ -15,7 +15,7 @@ class BackController extends Controller
 {
     /**
      * @return \Symfony\Component\HttpFoundation\Response
-     * @Route("/dashboard", name="admin")
+     * @Route("/profil", name="profil")
      */
     public function dashbordUserConnected()
     {

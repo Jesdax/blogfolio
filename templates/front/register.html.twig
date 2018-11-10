@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container center">
+        <div class="row">
+            <div class="col s12">
+                *Champs obligatoires
+            </div>
+        </div>
+        <div class="center margin-top">
+            {{ form_start(form) }}
+            <div class="row">
+                <div class="col s12 m6">
+                    {{ form_row(form.lastname) }}
+                </div>
+                <div class="col s12 m6">
+                    {{ form_row(form.firstname) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    {{ form_row(form.email.first) }}
+                </div>
+                <div class="col s12 m6">
+                    {{ form_row(form.email.second) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    {{ form_row(form.date_of_birth) }}
+                </div>
+                <div class="col s12 m6">
+                    {{ form_row(form.gender) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m12">
+                    {{ form_row(form.username) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    {{ form_row(form.password.first) }}
+                </div>
+                <div class="col s12 m6">
+                    {{ form_row(form.password.second) }}
+                </div>
+            </div>
+            <button class="btn btn-round btn-brown" type="submit"> Je m'inscris</button>
+            {{ form_end(form) }}
+        </div>
+
+    </div>
+
+{% endblock %}

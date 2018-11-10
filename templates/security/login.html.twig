@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% if error %}
+        <div>
+            {{ error.messageKey }}
+        </div>
+    {% endif %}
+    <div class="center">
+        <h1>Connexion</h1>
+    </div>
+    <div class="container">
+        <br/>
+        <div class="row">
+            {% if error %}
+                <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+            {{ form_start(form, {'action': path('security_login'), 'method': 'POST'}) }}
+            <div class="form-group row">
+                <div class="col m6 s12">
+                    {{ form_row(form._username) }}
+                </div>
+                <div class="col m6 s12">
+                    {{ form_row(form._password) }}
+                </div>
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"/>
+                <div class="center">
+                    <button class="btn btn-round btn-brown" type="submit">Valider</button>
+                </div>
+            </div>
+            {{ form_end(form) }}
+        </div>
+        <div class="center link-connexion">
+            <div class="row margin-bottom margin-top">
+                <a class="link-connexion" href="#">Mot de passe oublié</a>
+            </div>
+            <div class="row">
+                <a class="link-connexion" href="{{ path('register') }}">S'inscrire</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
