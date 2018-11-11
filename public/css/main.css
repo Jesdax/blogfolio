@@ -808,3 +808,11 @@ Utility
 }
 
 /*---- Formulaire ----*/
+
+
+/*---- Article / Blog ----*/
+
+.article-img {
+    height: 350px;
+    width: 100%;
+}
