@@ -1,6 +1,13 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}{{ parent() }} - {% if is_granted('ROLE_ADMIN') %}Administration{% else %}Mon profil{% endif %}{% endblock %}
 {% block body %}
-    Bienvenue sur le tableau de bord en développement {{ app.user.username }} !
+    <div class="center">
+        <div class="row">
+            <div class="col s12 m6 l2">
+                <img src="{% if user.image is same as(null) %}{{ asset('img/profile-placeholder.jpg') }}{% else %}{{ image_profile_directory }}/{{ user.image }}{% endif %}" alt="Photo_profil" class="responsive-img circle"/>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

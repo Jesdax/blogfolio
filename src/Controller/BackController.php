@@ -9,6 +9,7 @@
 namespace App\Controller;
 
 use App\Entity\Article;
+use App\Entity\User;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -22,11 +23,19 @@ class BackController extends Controller
 
     /**
      * @return \Symfony\Component\HttpFoundation\Response
-     * @Route("/profil", name="profil")
+     * @Route("/profil/{id}", name="profil", requirements={"id"="\d+$"})
      */
-    public function dashbordUserConnected()
+    public function dashbordUserConnected($id = -1)
     {
-        return $this->render('back/index.html.twig');
+        if ($id === -1) {
+            return $this->redirectToRoute('profil', ['id' => $this->getUser()->getId()]);
+        }
+
+        $user = $this->getDoctrine()->getRepository(User::class)->findById($id);
+
+        return $this->render('back/index.html.twig', [
+            'user' => $user,
+        ]);
     }
 
     /**

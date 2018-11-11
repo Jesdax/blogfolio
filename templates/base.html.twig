@@ -30,9 +30,9 @@
                         <li><a href="{{ path('blog') }}">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                         {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
-                            <li><a href="{{ path('security_logout') }}">Se déconnecter</a></li>
+                            <li><a href="{{ path('security_logout') }}"><i class="material-icons">power_settings_new</i></a></li>
                         {% else %}
-                            <li><a href="{{ path('security_login') }}">Connexion / Inscription</a></li>
+                            <li><a href="{{ path('security_login') }}"><i class="material-icons">person</i></a></li>
                         {% endif %}
                     </ul>
                 </div>
@@ -49,9 +49,9 @@
             <li><a href="{{ path('blog') }}">Blog</a></li>
             <li><a href="#">Contact</a></li>
             {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
-            <li><a href="{{ path('security_logout') }}">Se déconnecter</a></li>
+            <li><a href="{{ path('security_logout') }}"><i class="material-icons">power_settings_new</i></a></li>
             {% else %}
-            <li><a href="{{ path('security_login') }}">Connexion / Inscription</a></li>
+            <li><a href="{{ path('security_login') }}"><i class="material-icons">person</i></a></li>
             {% endif %}
         </ul>
 
