@@ -19,32 +19,35 @@ class ArticleRepository extends ServiceEntityRepository
         parent::__construct($registry, Article::class);
     }
 
-    // /**
-    //  * @return Article[] Returns an array of Article objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    public function findPublishedWithOffset($offset, $limit)
     {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('a.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
+        $qb = $this->createQueryBuilder('a')
+            ->andWhere('a.status = true')
+            ->setFirstResult($offset)
+            ->setMaxResults($limit)
+            ->orderBy('a.publishing_date', 'DESC')
+            ->getQuery();
 
-    /*
-    public function findOneBySomeField($value): ?Article
-    {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
+        return $qb->getResult();
     }
-    */
+
+    public function getNbPublishedArticle()
+    {
+        $qb = $this->createQueryBuilder('a');
+            $qb->where('a.status = true');
+            $qb->select($qb->expr()->count('a.id'));
+
+        return $qb->getQuery()->getSingleScalarResult();
+    }
+
+    public function findPublishedById($id)
+    {
+        $qb = $this->createQueryBuilder('a')
+            ->andWhere('a.id = :id')
+            ->andWhere('a.status = true')
+            ->setParameter('id', $id)
+            ->getQuery();
+
+        return $qb->getSingleResult();
+    }
 }

@@ -23,11 +23,11 @@
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="{{ path('homepage') }}">Accueil</a></li>
-                        <li><a href="#a-propos">À propos</a></li>
-                        <li><a href="#competences">Compétences</a></li>
-                        <li><a href="#cursus">Parcours</a></li>
-                        <li><a href="#project">Projets</a></li>
-                        <li class="disabled"><a href="#">Blog</a></li>
+                        <li><a href="/#a-propos">À propos</a></li>
+                        <li><a href="/#competences">Compétences</a></li>
+                        <li><a href="/#cursus">Parcours</a></li>
+                        <li><a href="/#project">Projets</a></li>
+                        <li><a href="{{ path('blog') }}">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                         {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
                             <li><a href="{{ path('security_logout') }}">Se déconnecter</a></li>
@@ -42,11 +42,11 @@
 
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ path('homepage') }}">Accueil</a></li>
-            <li><a href="#a-propos">À propos</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#cursus">Parcours</a></li>
-            <li><a href="#project">Projets</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="/#a-propos">À propos</a></li>
+            <li><a href="/#competences">Compétences</a></li>
+            <li><a href="/#cursus">Parcours</a></li>
+            <li><a href="/#project">Projets</a></li>
+            <li><a href="{{ path('blog') }}">Blog</a></li>
             <li><a href="#">Contact</a></li>
             {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
             <li><a href="{{ path('security_logout') }}">Se déconnecter</a></li>

@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - Articles {% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="center">
+                    <img src="http://via.placeholder.com/750x350" alt="article_" class="responsive-img">
+                    <h1 class="padding-bottom">{{ article.title }}</h1>
+                </div>
+                <div>
+                    {{ article.content|raw }}
+                </div>
+                <p class="center margin-b margin-t">{{ article.user.lastname }} {{ article.user.firstname }} - {{ article.publishingDate|date("d/m/Y") }}</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
