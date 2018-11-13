@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - Contact{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="center">Contact</h1>
+        <div>
+            {{ form_start(form) }}
+            <div class="row margin-top">
+                <div class="col s12 grey-text">*Champs obligatoire</div>
+            </div>
+            <div class="row margin-top">
+                <div class="col s12 m6">{{ form_row(form.lastname) }}</div>
+                <div class="col s12 m6">{{ form_row(form.firstname) }}</div>
+            </div>
+            <div class="row">
+                <div class="col s12 m12">{{ form_row(form.email) }}</div>
+            </div>
+            <div class="row">
+                <div class="col s12">{{ form_row(form.subject) }}</div>
+            </div>
+            <div class="row">
+                <div class="col s12">{{ form_row(form.message) }}</div>
+            </div>
+            <div class="row center-align margin-b margin-t">
+                <input type="submit" class="btn" value="Envoyer">
+            </div>
+            {{ form_end(form) }}
+        </div>
+
+    </div>
+
+
+
+{% endblock %}
