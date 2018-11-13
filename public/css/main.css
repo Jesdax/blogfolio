@@ -816,3 +816,10 @@ Utility
     height: 350px;
     width: 100%;
 }
+
+/*---- Admin dashboard ----*/
+
+#manage-blog{
+    height: 100px;
+    background-color: #af9d7c;
+}

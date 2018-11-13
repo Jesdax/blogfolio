@@ -3,7 +3,7 @@
 {% block title %}{{ parent() }} - Articles {% endblock %}
 
 {% block body %}
-    <div class="container">
+    <div>
         <div class="row">
             <div class="col s12">
                 <div class="center">
@@ -16,7 +16,7 @@
                     " alt="article_" class="article-img">
                     <h1 class="padding-bottom">{{ article.title }}</h1>
                 </div>
-                <div>
+                <div class="container">
                     {{ article.content|raw }}
                 </div>
                 <p class="center margin-b margin-t">{{ article.user.lastname }} {{ article.user.firstname }} - {{ article.publishingDate|date("d/m/Y") }}</p>

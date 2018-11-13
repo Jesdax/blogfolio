@@ -21,23 +21,26 @@ class ManagerForBlog
     private $fileManager;
     private $imageDirectory;
 
-    public function __construct(EntityManagerInterface $entityManager, ManagerForFile $fileManager, TokenStorageInterface $storage, $imageDirectory)
+    public function __construct(EntityManagerInterface $entityManager, ManagerForFile $fileManager, TokenStorageInterface $storage, $directory)
     {
         $this->em = $entityManager;
         $this->storage = $storage;
         $this->fileManager = $fileManager;
-        $this->imageDirectory = $imageDirectory;
+        $this->imageDirectory = $directory;
     }
 
+    /**
+     * @return Article
+     */
     public function defaultArticle()
     {
         $article = new Article();
-        $article->setTitle('L\'innovation marque le début du futur.')
-            ->setContent('La nouvelle génération de robot ...')
+        $article->setTitle('Le titre')
+            ->setContent('Un Texte ...')
             ->setStatus(false)
             ->setImage(null)
             ->setCreatedAt(new \DateTime())
-            ->setPublishingDate(null)
+            ->setPublishingDate(new \DateTime())
             ->setUser($this->storage->getToken()->getUser());
 
         return $article;

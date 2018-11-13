@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'materialize_layout.html.twig' %}
+
+{% block title %}{{ parent() }} - Édition d'un article{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+    <script>
+        tinymce.init({
+            selector:'.tinymce',
+            height: 400,
+            plugins: 'image link lists advlist autolink media',
+            menubar: false,
+            toolbar: ' undo redo | formatselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | cut copy paste | link image media'
+        });
+    </script>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        {{ form_start(form) }}
+        {{ form_row(form.title) }}
+        {{ form_row(form.content) }}
+        {% if form.image is defined %}
+            {{ form_widget(form.image) }}
+        {% endif %}
+        {% if form.delete_image is defined %}
+            {{ form_widget(form.delete_image) }}
+        {% endif %}
+
+        <div class="row center">
+            {% if form.publish is defined %}
+                {{ form_widget(form.publish, { 'attr' : { 'class' : 'btn'}}) }}
+            {% endif %}
+            {{ form_widget(form.save, { 'attr' : { 'class' : 'btn'}}) }}
+            {{ form_widget(form.delete, { 'attr' : { 'class' : 'btn'}}) }}
+        </div>
+
+        {{ form_end(form) }}
+    </div>
+
+{% endblock %}

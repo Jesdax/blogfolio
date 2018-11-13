@@ -7,6 +7,14 @@
             <div class="col s12 m6 l2">
                 <img src="{% if user.image is same as(null) %}{{ asset('img/profile-placeholder.jpg') }}{% else %}{{ image_profile_directory }}/{{ user.image }}{% endif %}" alt="Photo_profil" class="responsive-img circle"/>
             </div>
+            <div class="col s12 m6 l8" >
+                <a href="{{ path('gestion-articles') }}">
+                    <div class="card" id="manage-blog">
+                        <span class="card-title">Manager Blog</span>
+                        <p>Blog</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 

@@ -10,6 +10,12 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use App\Entity\User;
+use App\Form\AddingArticleType;
+use App\Form\ArticleType;
+use App\Form\ArticleWithoutImageType;
+use App\Services\ManagerForBlog;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -66,6 +72,111 @@ class BackController extends Controller
 
         return $this->render('front/article.html.twig', [
             'article' => $article,
+        ]);
+    }
+
+    /**
+     * @param int $page
+     * @param ManagerForBlog $articleManager
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @Route("/profil/gestion-articles/{page}", name="gestion-articles", requirements={"page"="\d+"})
+     */
+    public function manageBlogAction($page = 1, ManagerForBlog $articleManager, Request $request){
+
+        //Requete BDD
+        $articles = $this->getDoctrine()
+            ->getRepository(Article::class)
+            ->findWithOffset(($page-1)*self::NBR_ARTICLE_MANAGE, self::NBR_ARTICLE_MANAGE);
+
+        //Formulaire
+        $article = new Article();
+        $form = $this->createForm(AddingArticleType::class, $article);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted()) {
+            $entityManager = $this->getDoctrine()->getManager();
+
+            $entityManager->persist($articleManager->DefaultArticle());
+            $entityManager->flush();
+            return $this->redirectToRoute('gestion-articles');
+        }
+
+
+
+
+        return $this->render('back/manageBlog.html.twig', [
+            'form' => $form->createView(),
+            'articles' => $articles,
+        ]);
+    }
+
+    /**
+     * @param Request $request
+     * @param ManagerForBlog $articleManager
+     * @param $id_article
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @Route("/profil/gerer-articles/{id_article}", name="edit-article", requirements={"id_article"="\d+"})
+     */
+    public function editArticleAction(Request $request, ManagerForBlog $articleManager, $id_article){
+
+        //Requete BDD
+        $article = $this->getDoctrine()
+            ->getRepository(Article::class)
+            ->findById($id_article);
+
+        $form = '';
+
+        if($article->getImage() === null){
+            $form = $this->createForm(ArticleType::class, $article);
+        } else {
+            $form = $this->createForm(ArticleWithoutImageType::class, $article);
+        }
+
+        //Si l'article n'est pas publié, on ajoute le bouton 'Publier'
+        if($article->getStatus() === false){
+            $form->add('publish', SubmitType::class, ['label' => 'Publier article']);
+        }
+
+        //Autre boutons ajoutés
+        $form->add('save', SubmitType::class, ['label' => 'Enregistrer'])
+            ->add('delete', SubmitType::class, ['label' => 'Supprimer']);
+
+        $form->handleRequest($request);
+
+        //Si le formulaire est soumis et valide
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            //Supprimer image
+            if ($form->getClickedButton()->getName() == 'delete_image'){
+                $articleManager->deleteImage($article);
+                return $this->redirectToRoute('edit-article', ['id_article' => $id_article]);
+            }
+
+            else{
+
+                //Upload l'image
+                if ($article->getImage() !==  null && $form->has('image')){
+                    $articleManager->uploadImage($article, $form->get('image')->getData());
+                }
+
+                //Action en fonction du bouton
+                if ($form->getClickedButton()->getName() == 'delete'){
+                    $articleManager->deleteArticle($article);
+                }
+                elseif ($form->getClickedButton()->getName() == 'save'){
+                    $articleManager->createArticle($article);
+                }
+                elseif ($form->getClickedButton()->getName() == 'publish'){
+                    $articleManager->publishArticle($article);
+                }
+                return $this->redirectToRoute('gestion-articles');
+            }
+        }
+
+
+        return $this->render('back/editArticle.html.twig', [
+            'form' => $form->createView()
         ]);
     }
 

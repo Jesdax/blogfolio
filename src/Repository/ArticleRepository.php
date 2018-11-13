@@ -19,6 +19,15 @@ class ArticleRepository extends ServiceEntityRepository
         parent::__construct($registry, Article::class);
     }
 
+    public function findById($id){
+        $qb = $this->createQueryBuilder('a')
+            ->andWhere('a.id = :id')
+            ->setParameter('id', $id)
+            ->getQuery();
+
+        return $qb->getSingleResult();
+    }
+
     public function findPublishedWithOffset($offset, $limit)
     {
         $qb = $this->createQueryBuilder('a')
@@ -49,5 +58,15 @@ class ArticleRepository extends ServiceEntityRepository
             ->getQuery();
 
         return $qb->getSingleResult();
+    }
+
+    public function findWithOffset($offset, $limit){
+        $qb = $this->createQueryBuilder('a')
+            ->setFirstResult($offset)
+            ->setMaxResults($limit)
+            ->orderBy('a.modification_date', 'DESC')
+            ->getQuery();
+
+        return $qb->getResult();
     }
 }
