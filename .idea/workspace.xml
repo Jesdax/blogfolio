@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="315656fd-b9bb-442a-8713-320fa4ac154a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/xmasbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/xmasred.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/xmas.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/xmas.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/front/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,7 +109,7 @@
           <entry key="env" value="27" />
           <entry key="js" value="777" />
           <entry key="php" value="5058" />
-          <entry key="twig" value="8646" />
+          <entry key="twig" value="8665" />
           <entry key="txt" value="9" />
           <entry key="yaml" value="397" />
         </counts>
@@ -126,7 +122,7 @@
           <entry key="PHP" value="5058" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Scratch" value="56" />
-          <entry key="Twig" value="8643" />
+          <entry key="Twig" value="8662" />
           <entry key="YAML" value="397" />
         </counts>
       </usages-collector>
@@ -147,8 +143,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/front/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="246" column="50" lean-forward="true" selection-start-line="246" selection-start-column="50" selection-end-line="246" selection-end-column="50" />
+            <state relative-caret-position="150">
+              <caret line="268" column="34" lean-forward="true" selection-start-line="268" selection-start-column="34" selection-end-line="268" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -493,13 +489,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105857000" />
+    <option name="totallyTimeSpent" value="106117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12451577" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12451577" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -512,7 +508,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986165" visible="true" weight="0.25621623" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4986165" visible="true" weight="0.25621623" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013835" side_tool="true" weight="0.22054054" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -858,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/front/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="246" column="50" lean-forward="true" selection-start-line="246" selection-start-column="50" selection-end-line="246" selection-end-column="50" />
+        <state relative-caret-position="150">
+          <caret line="268" column="34" lean-forward="true" selection-start-line="268" selection-start-column="34" selection-end-line="268" selection-end-column="34" />
         </state>
       </provider>
     </entry>
