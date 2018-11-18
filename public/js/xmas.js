@@ -1,11 +1,3 @@
-$(document).ready(function(){
-    $('.my-countdown').countdown({
-        until:$.countdown.UTCDate(-4,2018,11,25,0,0,0,0),
-        format: 'dhms'
-    });
-
-});
-
 myDate=new Date();
 xmas=Date.parse("Dec 25, "+myDate.getFullYear())
 today=Date.parse(myDate)
@@ -34,7 +26,7 @@ function snow(num, speed) {
             snow(num, speed);
         }, speed);
     }
-};
+}
 
 function snowDrop(num, position) {
     if (num > 0) {
@@ -45,18 +37,8 @@ function snowDrop(num, position) {
         num--;
         snowDrop(num, randomInt(60, 1280));
     }
-};
+}
 
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
-};
-
-
-$(document).ready(function(){
-    $('.my-countdown').countdown({
-        until:$.countdown.UTCDate(-4,2018,11,25,0,0,0,0),
-        format: 'dhms'
-
-    });
-
-});
+}
