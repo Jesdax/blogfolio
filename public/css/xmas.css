@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie');
 
+@media screen and (max-width: 500px) {
+    .xcontainer .wreath {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
 .xcontainer .wreath {
-    margin-top: 60px;
+    margin-top: 100px;
+    margin-left: 0 !important;
 }
 
 .xcontainer {
-    background: #af0028;
+    background: url("../img/xmasred.png");
+    background-size: cover;
     height: 100vh !important;
 }
 
