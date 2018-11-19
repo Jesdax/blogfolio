@@ -25,9 +25,8 @@
                             <p class="center card-title">{{ article.title }}</p>
 
                             <p class="card-excerpt">
-                                {{ article.content|slice(0,32)|striptags|raw }}...
+                                {{ article.content|slice(0,100)|striptags|raw }}...
                             </p>
-                            <p class="center card-author">{{ article.publishingDate|date("d/m/Y") }}</p>
                         </div>
                     </div>
                     <div class="center card-action">
@@ -41,6 +40,5 @@
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js" type="text/javascript"></script>
     <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
 {% endblock %}

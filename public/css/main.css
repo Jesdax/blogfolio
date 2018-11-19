@@ -42,6 +42,11 @@ a {
     color: #ff0c01;
 }
 
+/*---- Contact ----*/
+
+#map_to_contact {
+    height: 380px;
+}
 
 /*---- Navigation ----*/
 
