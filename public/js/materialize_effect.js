@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    $('.carousel').carousel();
+    $('.scrollspy').scrollSpy({
+        scrollOffset: 70
+    });
     $('.sidenav').sidenav();
-    $('.scrollspy').scrollSpy();
+
 });
