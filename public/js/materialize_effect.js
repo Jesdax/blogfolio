@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.scrollspy').scrollSpy({
-        scrollOffset: 70
+        scrollOffset: 0
     });
     $('.sidenav').sidenav();
 
