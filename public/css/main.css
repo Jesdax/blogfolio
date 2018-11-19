@@ -46,6 +46,8 @@ a {
 
 #map_to_contact {
     height: 380px;
+    border-radius: 25px;
+    border: 2px solid darkgray;
 }
 
 /*---- Navigation ----*/
