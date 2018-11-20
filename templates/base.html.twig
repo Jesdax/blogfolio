@@ -60,6 +60,18 @@
         </ul>
 
         {% endblock %}
+        {% for label, messages in app.flashes %}
+            {% for message in messages %}
+                <div class="dialog dialog-{{ label }}" style="background: #69a26d">
+                    <div class="container center">
+                        <div class="row valign-wrapper">
+                            <p class="col"><i class="material-icons">info_outline</i></p>
+                            <p class="col"> {{ message }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endfor %}
         {% block body %}{% endblock %}
         {% block javascripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -69,20 +81,5 @@
         {#<script src="{{ asset('js/materialize.js') }}" type="text/javascript"></script>#}
 
         {% endblock %}
-        <footer>
-        {% block footer %}
-            <diw class="row container center">
-                <div class="col s12 m4">
-                    Git
-                </div>
-                <div class="col s12 m4">
-                    Fb
-                </div>
-                <div class="col s12 m4">
-                    Insta
-                </div>
-            </diw>
-        {% endblock %}
-        </footer>
     </body>
 </html>

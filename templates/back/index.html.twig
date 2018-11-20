@@ -1,13 +1,59 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}{{ parent() }} - {% if is_granted('ROLE_ADMIN') %}Administration{% else %}Mon profil{% endif %}{% endblock %}
-{% block body %}
-    <div class="center">
-        <div class="row">
-            <div class="col s12 m6 l2">
-                <img src="{% if user.image is same as(null) %}{{ asset('img/profile-placeholder.jpg') }}{% else %}{{ image_profile_directory }}/{{ user.image }}{% endif %}" alt="Photo_profil" class="responsive-img circle"/>
+
+{% block navigation %}
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="{{ path('homepage') }}" class="brand-logo"><img src="{{ asset('img/ak01.png') }}" alt="Logo du site" id="logo-ak"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ path('homepage') }}">Accueil</a></li>
+                    <li><a href="/#a-propos">À propos</a></li>
+                    <li><a href="/#competences">Compétences</a></li>
+                    <li><a href="/#cursus">Parcours</a></li>
+                    <li><a href="/#project">Projets</a></li>
+                    <li><a href="{{ path('blog') }}">Blog</a></li>
+                    <li><a href="{{ path('contact') }}">Contact</a></li>
+                    {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
+                        <li><a href="{{ path('profil', {'id': app.user.id}) }}"><i class="material-icons">person</i></a></li>
+                        <li><a href="{{ path('security_logout') }}"><i class="material-icons">power_settings_new</i></a></li>
+                    {% else %}
+                        <li><a href="{{ path('security_login') }}"><i class="material-icons">vpn_key</i></a></li>
+                    {% endif %}
+                </ul>
             </div>
-            <div class="col s12 m6 l8" >
+        </nav>
+    </div>
+
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="{{ path('homepage') }}">Accueil</a></li>
+        <li><a href="/#a-propos">À propos</a></li>
+        <li><a href="/#competences">Compétences</a></li>
+        <li><a href="/#cursus">Parcours</a></li>
+        <li><a href="/#project">Projets</a></li>
+        <li><a href="{{ path('blog') }}">Blog</a></li>
+        <li><a href="{{ path('contact') }}">Contact</a></li>
+        {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
+            <li><a href="{{ path('profil', {'id': app.user.id}) }}"><i class="material-icons">person</i></a></li>
+            <li><a href="{{ path('security_logout') }}"><i class="material-icons">power_settings_new</i></a></li>
+        {% else %}
+            <li><a href="{{ path('security_login') }}"><i class="material-icons">person</i></a></li>
+        {% endif %}
+    </ul>
+
+{% endblock %}
+{% block body %}
+    <div class="container center">
+        <h1>Tableau de bord</h1>
+        <div class="row">
+            {#Finish next version#}
+            {#<div class="col s12 m6 l2">
+                <img src="{% if user.image is same as(null) %}{{ asset('img/profile-placeholder.jpg') }}{% else %}{{ image_profile_directory }}/{{ user.image }}{% endif %}" alt="Photo_profil" class="responsive-img"/>
+            </div>#}
+            <div class="col s12 m5 l3" >
                 <a href="{{ path('gestion-articles') }}">
                     <div class="card" id="manage-blog">
                         <span class="card-title">Manager Blog</span>

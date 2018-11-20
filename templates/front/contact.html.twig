@@ -2,6 +2,49 @@
 
 {% block title %}{{ parent() }} - Contact{% endblock %}
 
+{% block navigation %}
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="{{ path('homepage') }}" class="brand-logo"><img src="{{ asset('img/ak01.png') }}" alt="Logo du site" id="logo-ak"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ path('homepage') }}">Accueil</a></li>
+                    <li><a href="/#a-propos">À propos</a></li>
+                    <li><a href="/#competences">Compétences</a></li>
+                    <li><a href="/#cursus">Parcours</a></li>
+                    <li><a href="/#project">Projets</a></li>
+                    <li><a href="{{ path('blog') }}">Blog</a></li>
+                    <li><a href="{{ path('contact') }}">Contact</a></li>
+                    {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
+                        <li><a href="{{ path('profil', {'id': app.user.id}) }}"><i class="material-icons">person</i></a></li>
+                        <li><a href="{{ path('security_logout') }}"><i class="material-icons">power_settings_new</i></a></li>
+                    {% else %}
+                        <li><a href="{{ path('security_login') }}"><i class="material-icons">vpn_key</i></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="{{ path('homepage') }}">Accueil</a></li>
+        <li><a href="/#a-propos">À propos</a></li>
+        <li><a href="/#competences">Compétences</a></li>
+        <li><a href="/#cursus">Parcours</a></li>
+        <li><a href="/#project">Projets</a></li>
+        <li><a href="{{ path('blog') }}">Blog</a></li>
+        <li><a href="{{ path('contact') }}">Contact</a></li>
+        {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
+            <li><a href="{{ path('profil', {'id': app.user.id}) }}"><i class="material-icons">person</i></a></li>
+            <li><a href="{{ path('security_logout') }}"><i class="material-icons">power_settings_new</i></a></li>
+        {% else %}
+            <li><a href="{{ path('security_login') }}"><i class="material-icons">person</i></a></li>
+        {% endif %}
+    </ul>
+
+{% endblock %}
 {% block body %}
     <div class="container">
         <h1 class="center">Contact</h1>
