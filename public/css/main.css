@@ -3,6 +3,22 @@
     background-image: linear-gradient(#434343, #af0028);
 }
 
+#backhround_homepage {
+    background-image: url("../img/bg2019.jpg");
+    height: 100vh !important;
+    width: 100%;
+}
+
+#rounder img {
+    border-radius: 1000px;
+    height: 250px;
+    margin-top: 10%;
+}
+
+
+.row .col {
+    min-height: 95px;
+}
 
 @media screen and (max-width: 500px){
     h1 {
@@ -827,6 +843,74 @@ Utility
 .article-img {
     height: 350px;
     width: 100%;
+}
+
+/*---- Blog ----*/
+
+.article h1{
+    font-size: 3.5rem !important;
+    font-weight: bold;
+}
+
+.card .card-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-blog .card-image {
+    height: 10em;
+    overflow: hidden;
+}
+
+.card-blog .card-bottom{
+    /*position: absolute;*/
+    padding-top: 2.5rem;
+    /*height: 29.5rem;*/
+    /*bottom: 20px;*/
+}
+
+.card-blog img {
+    height: 20em;
+    min-width: 100%;
+    width: auto !important;
+}
+
+.card-blog .card-image {
+    height: 20em;
+    overflow: hidden;
+}
+
+.card-blog .card-excerpt{
+    height: 7.5rem;
+    overflow: hidden;
+}
+
+.card-blog .card-action {
+    border-top: none;
+}
+
+.height-img{
+    height: 250px;
+    max-width: 100%;
+}
+
+.card-title-blog{
+    margin-bottom: 1.25rem!important;
+}
+
+@media only screen and (max-width: 600px) {
+    .article h1{
+        font-size: x-large !important;
+    }
+
+    .card-blog .card-title{
+        min-height: 8rem;
+        height: unset;
+    }
+
+    .card-blog .card-excerpt{
+        height: unset;
+    }
 }
 
 /*---- Admin dashboard ----*/

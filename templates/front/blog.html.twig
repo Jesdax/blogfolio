@@ -52,7 +52,7 @@
         <h1 class="center">Blog</h1>
         {% for article in articles%}
             <div class="col s12 m6 l3">
-                <div class="card">
+                <div class="card card-blog">
                     <div class="card-image">
                         <div class="center">
                             <img src="
@@ -66,9 +66,9 @@
                     </div>
                     <div class="card-bottom">
                         <div class="card-content">
-                            <p class="center card-title">{{ article.title }}</p>
+                            <p class="center card-title card-title-blog">{{ article.title }}</p>
 
-                            <p class="card-excerpt">
+                            <p class="card-excerpt text-justify">
                                 {{ article.content|slice(0,100)|striptags|raw }}...
                             </p>
                         </div>

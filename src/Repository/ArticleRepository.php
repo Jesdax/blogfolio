@@ -23,6 +23,7 @@ class ArticleRepository extends ServiceEntityRepository
         $qb = $this->createQueryBuilder('a')
             ->andWhere('a.id = :id')
             ->setParameter('id', $id)
+            ->orderBy('a.publishing_date', 'ASC')
             ->getQuery();
 
         return $qb->getSingleResult();
