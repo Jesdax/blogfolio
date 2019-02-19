@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="315656fd-b9bb-442a-8713-320fa4ac154a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/back/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/blog.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/blog.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/contact.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +55,7 @@
     <session id="-2026393613">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="27" />
+          <entry key="project.closed" value="29" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.12" value="1" />
@@ -73,13 +67,13 @@
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.58" value="1" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -160,10 +154,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/front/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="285" column="97" selection-start-line="285" selection-start-column="43" selection-end-line="285" selection-end-column="97" />
+            <state relative-caret-position="215">
+              <caret line="207" column="50" selection-start-line="207" selection-start-column="50" selection-end-line="207" selection-end-column="50" />
               <folding>
-                <element signature="e#14305#26772#0#HTML" />
                 <element signature="e#0#6#0" expanded="true" />
               </folding>
             </state>
@@ -431,7 +424,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jforteroche" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -499,21 +492,22 @@
       <workItem from="1548849209019" duration="4290000" />
       <workItem from="1549302947905" duration="3030000" />
       <workItem from="1549924898459" duration="1299000" />
-      <workItem from="1550414679856" duration="533000" />
+      <workItem from="1550414679856" duration="1289000" />
+      <workItem from="1550588956695" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145131000" />
+    <option name="totallyTimeSpent" value="145922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14001107" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14167129" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -522,7 +516,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986165" weight="0.24487594" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4986165" visible="true" weight="0.24432433" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013835" side_tool="true" weight="0.22054054" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -732,13 +726,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/front/contact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/front/contact.html.twig" />
     <entry file="file://$PROJECT_DIR$/templates/front/register.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -793,9 +781,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/front/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="285" column="97" selection-start-line="285" selection-start-column="43" selection-end-line="285" selection-end-column="97" />
+        <state relative-caret-position="215">
+          <caret line="207" column="50" selection-start-line="207" selection-start-column="50" selection-end-line="207" selection-end-column="50" />
           <folding>
+            <element signature="e#3701#9606#0#HTML" />
+            <element signature="e#9745#14166#0#HTML" />
             <element signature="e#14305#26772#0#HTML" />
             <element signature="e#0#6#0" expanded="true" />
           </folding>
