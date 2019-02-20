@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="315656fd-b9bb-442a-8713-320fa4ac154a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/icon/angular.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +82,7 @@
         <counts>
           <entry key="article" value="1" />
           <entry key="conf" value="4" />
-          <entry key="css" value="31" />
+          <entry key="css" value="32" />
           <entry key="env" value="3" />
           <entry key="js" value="22" />
           <entry key="json" value="2" />
@@ -89,7 +91,7 @@
           <entry key="php" value="69" />
           <entry key="png" value="1" />
           <entry key="sql" value="1" />
-          <entry key="svg" value="6" />
+          <entry key="svg" value="7" />
           <entry key="twig" value="114" />
           <entry key="yaml" value="19" />
         </counts>
@@ -97,14 +99,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="3" />
-          <entry key="CSS" value="31" />
+          <entry key="CSS" value="32" />
           <entry key="Database Element" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="22" />
           <entry key="Markdown" value="1" />
           <entry key="PHP" value="69" />
-          <entry key="SVG" value="6" />
+          <entry key="SVG" value="7" />
           <entry key="Scratch" value="1" />
           <entry key="SmartyConfig" value="4" />
           <entry key="Twig" value="114" />
@@ -119,7 +121,7 @@
           <entry key="env" value="164" />
           <entry key="js" value="832" />
           <entry key="php" value="5105" />
-          <entry key="twig" value="10215" />
+          <entry key="twig" value="10284" />
           <entry key="txt" value="9" />
           <entry key="yaml" value="494" />
         </counts>
@@ -133,7 +135,7 @@
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Scratch" value="56" />
           <entry key="SmartyConfig" value="64" />
-          <entry key="Twig" value="10212" />
+          <entry key="Twig" value="10281" />
           <entry key="YAML" value="494" />
         </counts>
       </usages-collector>
@@ -154,9 +156,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/front/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="207" column="50" selection-start-line="207" selection-start-column="50" selection-end-line="207" selection-end-column="50" />
+            <state relative-caret-position="435">
+              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
               <folding>
+                <element signature="e#392#656#0#HTML" />
+                <element signature="e#3701#9606#0#HTML" />
+                <element signature="e#9745#14218#0#HTML" />
+                <element signature="e#10012#13865#0#HTML" />
+                <element signature="e#14357#26824#0#HTML" />
+                <element signature="e#26963#28129#0#HTML" />
                 <element signature="e#0#6#0" expanded="true" />
               </folding>
             </state>
@@ -352,56 +360,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="pdf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -418,6 +376,43 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="translations" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -429,15 +424,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
-      <recent name="$PROJECT_DIR$/public/icon" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/icon" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/pdf" />
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/icon" />
     </key>
   </component>
@@ -498,12 +493,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145922000" />
+    <option name="totallyTimeSpent" value="147129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14167129" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14665191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -516,7 +512,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4986165" visible="true" weight="0.24432433" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986165" visible="true" weight="0.25621623" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013835" side_tool="true" weight="0.22054054" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -553,13 +549,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Form/ArticleWithoutImageType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Contact.php" />
     <entry file="file://$PROJECT_DIR$/src/Utility/Contact.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -684,13 +673,6 @@
     <entry file="file://$PROJECT_DIR$/public/img/xmasred.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/xmas.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -779,14 +761,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/icon/angular.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/xmas.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/front/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="207" column="50" selection-start-line="207" selection-start-column="50" selection-end-line="207" selection-end-column="50" />
+        <state relative-caret-position="435">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
           <folding>
+            <element signature="e#392#656#0#HTML" />
             <element signature="e#3701#9606#0#HTML" />
-            <element signature="e#9745#14166#0#HTML" />
-            <element signature="e#14305#26772#0#HTML" />
+            <element signature="e#9745#14218#0#HTML" />
+            <element signature="e#10012#13865#0#HTML" />
+            <element signature="e#14357#26824#0#HTML" />
+            <element signature="e#26963#28129#0#HTML" />
             <element signature="e#0#6#0" expanded="true" />
           </folding>
         </state>

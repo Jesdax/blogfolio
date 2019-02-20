@@ -3,17 +3,6 @@
 {% block title %}{{ parent() }} - Accueil{% endblock %}
 
 {% block body %}
-    {# For Christmas #}
-        {#<div class="row center">
-            <div class="xcontainer">
-                <div class="col s12 m3">
-                    {{ include('common/xmasStyle.html.twig') }}
-                </div>
-
-            </div>
-        </div>#}
-    {# End Theme #}
-
     <div id="backhround_homepage">
         <div id="rounder" class="center-align">
             <img src="../img/profil.jpg" alt="">
@@ -32,30 +21,29 @@
                 <h4>Hey ! Je m'appelle <strong>Augustin Kavera</strong> vivant à <strong>Clermont-Ferrand</strong> et je suis <span class="element"></span>.</h4>
                 <!-- End -->
                 <div class="container center">
-                    <section class="col s12 m6">
+                    <section class="col s12 m4">
                         <h6 class="center"><img src="{{ asset('icon/graduation-hat.svg') }}" alt="Student" class="icon-main"></h6>
                         <p class="center">
-                            Je suis actuellement étudiant au sein du parcours diplômant <a href="https://openclassrooms.com/paths/21-chef-de-projet-multimedia-developpement" target="_blank">
+                            Je suis actuellement en attente du Jury final du parcours diplômant <a href="https://openclassrooms.com/paths/21-chef-de-projet-multimedia-developpement" target="_blank">
                                 "Chef de projet multimédia - Développement"</a> d'Openclassrooms enregistré au <a href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=26290" target="_blank">
                                 Répertoire National des Certifications Professionnelles
-                            </a> au niveau II ou j'apprends à maîtriser les langages de programmation ainsi que la gestion de projet.
+                            </a> au niveau II.
                         </p>
                     </section>
-                    <section class="col s12 m6">
+                    <section class="col s12 m4">
                         <div class="icon-block">
                             <h6 class="center red-text"><img src="{{ asset('icon/like.svg') }}" alt="Coeur" class="icon-main"></h6>
                             <p class="center">
                                 Passionné par l’informatique, toujours en quête de nouvelles connaissances, je m’intéresse aux nouvelles technologies, je suis polyvalent,
                                 motivé et déterminé dans mes projets.
-                                Je pratique du sport (salle de musculation, footing) tous les soirs afin de me maintenir en forme et de m'évader quelques heures.
                             </p>
                         </div>
                     </section>
-                    <section class="col s12 m12">
+                    <section class="col s12 m4">
                         <div class="icon-block">
                             <h6 class="center"><img src="{{ asset('icon/checked.svg') }}" alt="Check" class="icon-main"></h6>
                             <p class="center">
-                                Jeune autodidacte, pratiquant le développement web pendant ma formation et lors de mes temps libres. J’aiguise mes compétences un peu plus
+                                Jeune autodidacte, pratiquant le développement web lors de mes temps libres. J’aiguise mes compétences un peu plus
                                 chaque jour, tant en programmation qu’en ligne de commande linux.
                             </p>
                         </div>
@@ -180,21 +168,9 @@
                 <ul class="list">
                     <li class="list__item">
                         <div class="wrapper">
-                            <img class="icon " src="{{ asset('icon/vue.png') }}" alt="Vue js">
+                            <img class="icon " src="{{ asset('icon/angular.svg') }}" alt="Angular js">
                         </div>
-                        <h4>Vue JS</h4>
-                    </li>
-                    <li class="list__item">
-                        <div class="wrapper">
-                            <img class="icon " src="{{ asset('icon/laravel.png') }}" alt="Laravel">
-                        </div>
-                        <h4>Laravel</h4>
-                    </li>
-                    <li class="list__item">
-                        <div class="wrapper">
-                            <img class="icon " src="{{ asset('icon/saas.png') }}" alt="Laravel">
-                        </div>
-                        <h4>Saas</h4>
+                        <h4>Angular JS</h4>
                     </li>
                 </ul>
             </section>
@@ -213,18 +189,6 @@
                 <div class="row">
                     <!-- Timeline -->
                     <ul class="timeline">
-                        <!-- Objet 0 -->
-                        <li>
-                            <div class="direction-l">
-                                <div class="flag-wrapper">
-                                    <span class="flag">Développeur web</span>
-                                    <span class="time-wrapper"><span class="time">2018</span></span>
-                                </div>
-                                <div class="desc">
-                                    Auto-entrepreneur - Augustin Kavera
-                                </div>
-                            </div>
-                        </li>
                         <!-- Objet 0 -->
                         <li>
                             <div class="direction-l">
