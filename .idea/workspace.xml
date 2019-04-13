@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="315656fd-b9bb-442a-8713-320fa4ac154a" name="Default Changelist" comment="" />
+    <list default="true" id="315656fd-b9bb-442a-8713-320fa4ac154a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/autotext.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/autotext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html.twig" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +57,18 @@
     <session id="-2026393613">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="32" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.27" value="3" />
           <entry key="project.open.time.28" value="5" />
           <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
@@ -71,7 +78,7 @@
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.58" value="1" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -80,15 +87,15 @@
           <entry key="conf" value="4" />
           <entry key="css" value="32" />
           <entry key="env" value="3" />
-          <entry key="js" value="22" />
+          <entry key="js" value="23" />
           <entry key="json" value="2" />
           <entry key="lock" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="69" />
+          <entry key="php" value="72" />
           <entry key="png" value="1" />
           <entry key="sql" value="1" />
           <entry key="svg" value="7" />
-          <entry key="twig" value="115" />
+          <entry key="twig" value="119" />
           <entry key="yaml" value="19" />
         </counts>
       </usages-collector>
@@ -99,13 +106,13 @@
           <entry key="Database Element" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="22" />
+          <entry key="JavaScript" value="23" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="69" />
+          <entry key="PHP" value="72" />
           <entry key="SVG" value="7" />
           <entry key="Scratch" value="1" />
           <entry key="SmartyConfig" value="4" />
-          <entry key="Twig" value="115" />
+          <entry key="Twig" value="119" />
           <entry key="YAML" value="19" />
         </counts>
       </usages-collector>
@@ -115,9 +122,9 @@
           <entry key="conf" value="64" />
           <entry key="css" value="2105" />
           <entry key="env" value="164" />
-          <entry key="js" value="832" />
+          <entry key="js" value="888" />
           <entry key="php" value="5105" />
-          <entry key="twig" value="10290" />
+          <entry key="twig" value="10567" />
           <entry key="txt" value="9" />
           <entry key="yaml" value="494" />
         </counts>
@@ -126,12 +133,12 @@
         <counts>
           <entry key=".env file" value="164" />
           <entry key="CSS" value="2105" />
-          <entry key="JavaScript" value="835" />
+          <entry key="JavaScript" value="891" />
           <entry key="PHP" value="5105" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Scratch" value="56" />
           <entry key="SmartyConfig" value="64" />
-          <entry key="Twig" value="10287" />
+          <entry key="Twig" value="10564" />
           <entry key="YAML" value="494" />
         </counts>
       </usages-collector>
@@ -152,26 +159,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/front/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            <state relative-caret-position="255">
+              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
               <folding>
-                <element signature="e#392#656#0#HTML" />
-                <element signature="e#3701#9606#0#HTML" />
-                <element signature="e#9745#14218#0#HTML" />
-                <element signature="e#10012#13865#0#HTML" />
-                <element signature="e#14357#26824#0#HTML" />
-                <element signature="e#26963#28129#0#HTML" />
                 <element signature="e#0#6#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="405">
+              <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/autotext.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="498" column="19" lean-forward="true" selection-start-line="498" selection-start-column="19" selection-end-line="498" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -219,7 +229,6 @@
         <option value="$PROJECT_DIR$/templates/mail/contact.html.twig" />
         <option value="$PROJECT_DIR$/public/js/xmas.js" />
         <option value="$PROJECT_DIR$/templates/front/article.html.twig" />
-        <option value="$PROJECT_DIR$/public/js/autotext.js" />
         <option value="$PROJECT_DIR$/public/js/materialize_effect.js" />
         <option value="$PROJECT_DIR$/config/packages/swiftmailer.yaml" />
         <option value="$PROJECT_DIR$/templates/front/contact.html.twig" />
@@ -238,10 +247,11 @@
         <option value="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/Controller/FrontController.php" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/back/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/front/blog.html.twig" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/front/index.html.twig" />
+        <option value="$PROJECT_DIR$/public/js/autotext.js" />
       </list>
     </option>
   </component>
@@ -365,22 +375,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="blogfolio" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="blogfolio" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -402,7 +396,30 @@
             <path>
               <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -413,6 +430,22 @@
               <item name="blogfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="blogfolio" type="462c0819:PsiDirectoryNode" />
               <item name="translations" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="blogfolio" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="blogfolio" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -494,17 +527,20 @@
       <workItem from="1549924898459" duration="1299000" />
       <workItem from="1550414679856" duration="1289000" />
       <workItem from="1550588956695" duration="35000" />
+      <workItem from="1550678207157" duration="599000" />
+      <workItem from="1550918951538" duration="490000" />
+      <workItem from="1555179209605" duration="1071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147763000" />
+    <option name="totallyTimeSpent" value="150465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14665191" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15163255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -589,16 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/autotext.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7410">
-          <caret line="494" column="84" selection-start-line="494" selection-start-column="84" selection-end-line="494" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -659,13 +685,6 @@
     <entry file="file://$PROJECT_DIR$/src/Services/ManagerForBlog.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BackController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/ArticleRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
@@ -717,13 +736,6 @@
     <entry file="file://$PROJECT_DIR$/templates/front/register.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/materialize_layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/back/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -769,17 +781,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/materialize_layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="16" lean-forward="true" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/BackController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/front/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
-            <element signature="e#392#656#0#HTML" />
-            <element signature="e#3701#9606#0#HTML" />
-            <element signature="e#9745#14218#0#HTML" />
-            <element signature="e#10012#13865#0#HTML" />
-            <element signature="e#14357#26824#0#HTML" />
-            <element signature="e#26963#28129#0#HTML" />
             <element signature="e#0#6#0" expanded="true" />
           </folding>
         </state>
@@ -787,8 +814,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="405">
+          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/autotext.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="498" column="19" lean-forward="true" selection-start-line="498" selection-start-column="19" selection-end-line="498" selection-end-column="19" />
         </state>
       </provider>
     </entry>

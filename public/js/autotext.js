@@ -492,7 +492,7 @@ function handleEscKey() {
 
 function handleTyping () {
     $(".element").typed({
-        strings: ["développeur fullstack Symfony", "motivé à 300% !", "autodidacte / autonome"],
+        strings: ["chef de projet digital junior", "développeur web junior",  "motivé à 300% !", "autodidacte / autonome"],
         typeSpeed: 50,
         starDelay: 200,
         backDelay: 800,
