@@ -15,7 +15,7 @@
                     <li><a href="/#competences">Compétences</a></li>
                     <li><a href="/#cursus">Parcours</a></li>
                     <li><a href="/#project">Projets</a></li>
-                    <li><a href="{{ path('blog') }}">Blog</a></li>
+{#                    <li><a href="{{ path('blog') }}">Blog</a></li>#}
                     <li><a href="/#sampleContact">Contact</a></li>
                     {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
                         <li><a href="{{ path('profil', {'id': app.user.id}) }}"><i class="material-icons">person</i></a></li>
@@ -35,7 +35,7 @@
         <li><a href="/#competences">Compétences</a></li>
         <li><a href="/#cursus">Parcours</a></li>
         <li><a href="/#project">Projets</a></li>
-        <li><a href="{{ path('blog') }}">Blog</a></li>
+{#        <li><a href="{{ path('blog') }}">Blog</a></li>#}
         <li><a href="/#sampleContact">Contact</a></li>
         {% if is_granted(['ROLE_USER', 'ROLE_ADMIN']) %}
             <li><a href="{{ path('profil', {'id': app.user.id}) }}"><i class="material-icons">person</i></a></li>
