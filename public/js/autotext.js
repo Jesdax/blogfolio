@@ -492,7 +492,8 @@ function handleEscKey() {
 
 function handleTyping () {
     $(".element").typed({
-        strings: ["autonome", "rigoureux",  "motivé à 300% !", "votre futur maestro", "votre prochain développeur web"],
+        strings: ["autonome", "rigoureux",  "motivé à 300% !", "votre futur maestro", "votre prochain développeur web" +
+        ""],
         typeSpeed: 50,
         starDelay: 200,
         backDelay: 800,
