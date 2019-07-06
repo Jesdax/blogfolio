@@ -405,60 +405,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4">
-                            <div class="hover panel" onmouseover="this.className += ' flip';" onmouseout="this.className = 'hover panel';">
-                                <div class="front">
-                                    <div class="frontTitle">
-                                        Portfolio
-                                    </div>
-                                    <div class="frontLogo">
-                                        <img src="{{ asset('img/006.png') }}" alt="Projet 5">
-                                    </div>
-                                    <div class="frontLocation">
-                                        Version 1
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="backTitle">Premier pas</div>
-                                    <br/>
-                                    <div class="backParagraph">
-                                        Première version de mon portfolio pour présenter une partie de mes projets aux différents recruteurs<br/>
-                                        Simple site vitrine natif sans framework PHP.
-                                    </div>
-                                    <div class="backGoto">
-                                        <a href="http://portfolio-alpha.augustinkavera.com" target="_blank" title="Première version du site">Voir l'ancienne version →</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4">
-                            <div class="hover panel" onmouseover="this.className += ' flip';" onmouseout="this.className = 'hover panel';">
-                                <div class="front">
-                                    <div class="frontTitle">
-                                        Carma Gonesse
-                                    </div>
-                                    <div class="frontLogo">
-                                        <img src="{{ asset('img/007.png') }}" alt="Projet 5">
-                                    </div>
-                                    <div class="frontLocation">
-                                        Wordpress
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="backTitle">Site de l'association CARMA</div>
-                                    <br/>
-                                    <div class="backParagraph">
-                                        Refonte complet du site CARMA Gonesse en respectant au mieux les exigences du client.<br/>
-                                        Projet web bénévole. (Pré-prod)<br/>
-                                    </div>
-                                    <div class="backGoto">
-                                        <a href="http://carma.augustinkavera.com" target="_blank" title="Site temporaire">Voir le site →</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
+                    <div class="col s12 m4">
                         <div class="hover panel" onmouseover="this.className += ' flip';" onmouseout="this.className = 'hover panel';">
                             <div class="front">
                                 <div class="frontTitle">
@@ -468,15 +415,18 @@
                                     <img src="{{ asset('img/008.jpg') }}" alt="Location déco auvergne Issoire">
                                 </div>
                                 <div class="frontLocation">
-                                    Site vitrine e-commerce
+                                    Site vitrine
                                 </div>
                             </div>
                             <div class="back">
-                                <div class="backTitle">Projet en cours</div>
+                                <div class="backTitle">Développement web / SEO</div>
                                 <br/>
                                 <div class="backParagraph">
-                                    Site vitrine e-commerce d'une agence de location de décorations de mariage<br/>
-                                    En cours de développement
+                                    Site vitrine d'une agence de location de décorations de mariage<br/>
+                                    basé sur Issoire.
+                                </div>
+                                <div class="backGoto">
+                                    <a href="https://www.locationdecoauvergne.fr" target="_blank" title="Agence de location de décorations de mariage">Visiter le site →</a>
                                 </div>
                             </div>
                         </div>
@@ -514,8 +464,8 @@
                         <br>
                         <div>
                             <i class="material-icons small">near_me</i>
-                            <h4>78 Rue du Ressort <br>
-                            63 100 Clermont-Ferrand
+                            <h4>
+                                Clermont-Ferrand
                             </h4>
                         </div>
                     </div>
@@ -535,7 +485,7 @@
     <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
     <script>
         var mapContact = L.map('map_to_contact', {
-            center: [45.789038, 3.116281],
+            center: [45.777222, 3.087025],
             zoom: 17,
             scrollWheelZoom: false
         })
@@ -546,6 +496,6 @@
             accessToken: 'pk.eyJ1IjoiamVzZGF4IiwiYSI6ImNqbGlqcnJjazAxemsza3MxbGhvMTljd2UifQ.Sj-xlNYTfb_hU1R0XseFag',
         }).addTo(mapContact);
 
-        L.marker([45.789038, 3.116281]).addTo(mapContact);
+        L.marker([45.777222, 3.087025]).addTo(mapContact);
     </script>
 {% endblock %}
